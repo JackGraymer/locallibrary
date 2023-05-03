@@ -7,6 +7,19 @@ var logger = require("morgan");
 var indexRouter = require("./routes/index");
 var usersRouter = require("./routes/users");
 
+//Set up mongoose connection
+const mongoose = require("mongoose");
+mongoose.set("strictQuery", false);
+const mongoDB =
+  "mongodb+srv://1111:<1111>@cluster1.2w00ggj.mongodb.net/local_library/?retryWrites=true&w=majority";
+
+main().catch((err) => console.log(err));
+console.log("Connecting to MongoDB...");
+async function main() {
+  await mongoose.connect(mongoDB);
+  console.log("Connected successfully to MongoDB");
+}
+
 var app = express();
 
 // view engine setup
