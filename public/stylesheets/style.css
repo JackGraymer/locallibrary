@@ -1,0 +1,14 @@
+*{
+  color: azure;
+  
+}
+
+body {
+  padding: 50px;
+  font: 14px sans-serif, Helvetica, Arial, sans-serif;
+  background-color: darkslategray;
+}
+
+a {
+  color: #00B7FF;
+}
