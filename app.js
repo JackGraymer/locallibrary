@@ -11,7 +11,7 @@ var usersRouter = require("./routes/users");
 const mongoose = require("mongoose");
 mongoose.set("strictQuery", false);
 const mongoDB =
-  "mongodb+srv://1111:<1111>@cluster1.2w00ggj.mongodb.net/local_library/?retryWrites=true&w=majority";
+  "mongodb+srv://1111:1111@cluster1.2w00ggj.mongodb.net/local_library?retryWrites=true&w=majority";
 
 main().catch((err) => console.log(err));
 console.log("Connecting to MongoDB...");
