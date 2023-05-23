@@ -18,10 +18,10 @@ mongoose.set("strictQuery", false);
 const mongoDB = process.env.DB_CONNECTION_STRING;
 
 main().catch((err) => console.log(err));
-console.log("Connecting to MongoDB...");
+console.log("Connecting to database...");
 async function main() {
   await mongoose.connect(mongoDB);
-  console.log("Connected successfully to MongoDB");
+  console.log("Connected successfully to database");
 }
 
 const app = express();
